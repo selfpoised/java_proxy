@@ -1,3 +1,5 @@
+package proxy;
+
 import sun.misc.ProxyGenerator;
 
 import java.io.FileOutputStream;

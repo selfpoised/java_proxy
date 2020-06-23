@@ -1,3 +1,5 @@
+package proxy;
+
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Proxy;
 
@@ -25,7 +27,7 @@ public class Client2 {
         proxy.select();
         proxy.update();
 
-        // 保存JDK动态代理生成的代理类，类名保存为 UserServiceProxy
-        ProxyUtils.generateClassFile(userServiceImpl.getClass(), "UserServiceProxy");
+        // 保存JDK动态代理生成的代理类，类名保存为 proxy.UserServiceProxy
+        ProxyUtils.generateClassFile(userServiceImpl.getClass(), "proxy.UserServiceProxy");
     }
 }

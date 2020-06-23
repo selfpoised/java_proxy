@@ -1,3 +1,5 @@
+package proxy;
+
 public class UserServiceImpl implements UserService {
     public void select() {
         System.out.println("查询 selectById");

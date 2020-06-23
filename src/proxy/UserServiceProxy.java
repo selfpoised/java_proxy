@@ -1,3 +1,5 @@
+package proxy;
+
 import java.util.Date;
 
 public class UserServiceProxy implements UserService {

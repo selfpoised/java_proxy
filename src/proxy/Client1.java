@@ -1,3 +1,5 @@
+package proxy;
+
 public class Client1 {
     public static void main(String[] args) {
         UserService userServiceImpl = new UserServiceImpl();
