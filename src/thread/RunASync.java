@@ -4,7 +4,7 @@ import java.util.concurrent.CompletableFuture;
 import java.util.concurrent.TimeUnit;
 
 public class RunASync {
-    public static void main(String[] args) throws Exception{
+    public static void main(String[] args) throws Throwable{
         {
             CompletableFuture<String> welcomeText = CompletableFuture.supplyAsync(() -> {
                 try {
@@ -28,7 +28,7 @@ public class RunASync {
                 try {
                     System.out.println(Thread.currentThread().getName());
                     //TimeUnit.SECONDS.sleep(1);
-                } catch (Exception e) {
+                } catch (Throwable e) {
                     throw new IllegalStateException(e);
                 }
                 return "Rajeev";

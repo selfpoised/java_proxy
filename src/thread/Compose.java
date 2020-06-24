@@ -4,7 +4,7 @@ import java.util.concurrent.CompletableFuture;
 import java.util.concurrent.TimeUnit;
 
 public class Compose {
-    public static void main(String[] args) throws Exception{
+    public static void main(String[] args) throws Throwable{
         {
             System.out.println("Retrieving weight.");
             CompletableFuture<Double> weightInKgFuture = CompletableFuture.supplyAsync(() -> {
